@@ -13,7 +13,7 @@ namespace SpringBlog.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202004291623214_Initial"; }
+            get { return "202005081546538_Initial"; }
         }
         
         string IMigrationMetadata.Source
