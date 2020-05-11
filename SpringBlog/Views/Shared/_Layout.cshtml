@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@*https://startbootstrap.com/templates/blog-home/*@
+<!DOCTYPE html>
 <html lang="en" class="h-100">
 
 <head>
@@ -88,7 +89,7 @@
                 <div class="card my-4">
                     <h5 class="card-header">Search</h5>
                     <div class="card-body">
-                        @using (Html.BeginForm("Index", "Home",FormMethod.Get, new { id = "frmSearch" }))
+                        @using (Html.BeginForm("Index", "Home", FormMethod.Get, new { id = "frmSearch" }))
                         {
                             <div class="input-group">
                                 @Html.TextBox("q", null, new { @class = "form-control", placeholder = "Search for..." })
