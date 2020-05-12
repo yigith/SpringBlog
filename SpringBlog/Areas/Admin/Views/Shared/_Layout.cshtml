@@ -195,6 +195,14 @@
                                 </li>
                             </ul>
                         </li>
+                        <li class="nav-item has-treeview menu-open">
+                            @MenuLink("Comments", "", "Comments", "fas fa-comments", true)
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    @MenuLink("List Comments", "Index", "Comments", "fas fa-list")
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
                 <!-- /.sidebar-menu -->
@@ -230,9 +238,9 @@
 
         <footer class="main-footer">
             <div class="float-right d-none d-sm-block">
-                <b>Version</b> 3.0.4
+                <b>Version</b> 1.0.0
             </div>
-            <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong> All rights
+            <strong>Copyright &copy; 2020 <a href="https://github.com/yigith/SpringBlog">Spring Blog</a>.</strong> All rights
             reserved.
         </footer>
 
@@ -258,6 +266,8 @@
     <script src="~/Areas/Admin/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
     <script src="~/Areas/Admin/plugins/toastr/toastr.min.js"></script>
     <script src="~/Areas/Admin/plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
+    <!-- Bootstrap Switch -->
+    <script src="~/Areas/Admin/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
     <!-- AdminLTE App -->
     <script src="~/Areas/Admin/dist/js/adminlte.min.js"></script>
     <!-- AdminLTE for demo purposes -->
