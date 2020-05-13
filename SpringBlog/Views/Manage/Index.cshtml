@@ -135,6 +135,8 @@
 @section scripts {
 
     <script>
+        // https://foliotek.github.io/Croppie/
+        // https://codepen.io/yigith/pen/NWGxGXg
         var cropper = null;
 
         $("#file-input").change(function () {
@@ -159,7 +161,8 @@
                 reader.onload = function (e) {
                     if(cropper == null)
                         cropper = $('.cropper').croppie({
-                            enableOrientation: true
+                            enableOrientation: true,
+                            viewport: { width: 150, height: 150, type: 'square' }
                         });
 
                     cropper.croppie('bind', {
