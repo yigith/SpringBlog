@@ -3,6 +3,7 @@ using SpringBlog.Models;
 using SpringBlog.ViewModels;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
@@ -52,11 +53,9 @@ namespace SpringBlog.Controllers
             return View(vm);
         }
 
-        public async Task<ActionResult> About()
+        public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
-
-            await EmailUtilities.SendEmailAsync("yigith1@gmail.com", "subject", "about");
 
             return View();
         }
